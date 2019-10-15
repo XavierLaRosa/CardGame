@@ -78,7 +78,7 @@ public class Game {
     boolean isUniqueIdentifier(List<Player> playersSorted, String playerName){
         for(int i = 0; i<playersSorted.size(); i++){
             //System.out.println("Comparing names: "+playersSorted.get(i).getName() + ", "+playerName);
-            if(playersSorted.get(i).getName().equals(playerName)){
+            if(playersSorted.get(i).getName().equalsIgnoreCase(playerName)){
                 return false;
             }
         }
